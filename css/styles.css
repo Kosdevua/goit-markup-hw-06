@@ -45,14 +45,43 @@ img {
 }
 
 .container {
-    max-width: 1158px;
-    padding: 0 15px;
+    min-width: 320px;
+    max-width: 375px;
+    padding: 0 16px;
+    margin-top: 96;
     margin: 0 auto;
 }
+
+@media only screen and (min-width: 768px) {
+    .container {
+        max-width: 768px;
+        margin-top: 96;
+        padding: 0 16px;
+        /* margin: 0 auto; */
+    }
+}
+
+@media only screen and (min-width: 1158px) {
+    .container {
+        max-width: 1128px;
+        padding: 120px 56px;
+        /* margin: 0 auto; */
+    }
+}
+
 
 .section {
     padding: 120px 0;
 }
+
+/* start rule for hiden secrion */
+
+.hidden-visible {
+    display: none;
+}
+
+/* finish rule for hiden secrion */
+
 
 /* Header section */
 
@@ -253,7 +282,7 @@ img {
     letter-spacing: 0.02em;
 }
 
-.wrapper-svg {
+.feature-wrapper-svg {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -452,8 +481,6 @@ img {
 .footer-left {
     margin-right: 120px;
 }
-
-.bottom-part .container {}
 
 .footer-social-title {
     font-weight: 500;
