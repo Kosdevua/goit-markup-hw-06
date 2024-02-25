@@ -20,13 +20,18 @@
 
 <body>
     <!-- Header section -->
-    <header class="hidden-visible header">
+    <header class=" header">
         <!-- Header section -->
         <div class="container">
             <nav class="nav-header">
                 <a class="header-logo-left" href="./index.html">
                     Web<span class="header-logo-right">Studio</span>
                 </a>
+                <button type="button" class="header-burger-button">
+                    <svg class="header-svg-burger" width="24" height="24">
+                        <use href="./images/icons.svg#icon-heroicons-solid_menu"></use>
+                    </svg>
+                </button>
                 <ul class="header-list">
                     <li class="header-item"><a class="nav-link nav-link-ch" href="./index.html">Studio</a></li>
                     <li class="header-item"><a class="nav-link" href="">Portfolio</a></li>
@@ -48,18 +53,18 @@
     <!-- Main section -->
     <main>
         <!-- #1 Title section -->
-        <section class="hidden-visible main-part">
+        <section class=" main-part">
             <div class="container wrap-main-part">
                 <h1 class="main-title">Effective Solutions for Your Business</h1>
                 <button class="button" type="button">Order Service</button>
             </div>
         </section>
         <!-- #2 Feature section -->
-        <section class="feature section">
+        <section class="  feature section">
             <div class="container">
                 <h2 class="visually-hidden">Title</h2>
                 <ul class="feature-list">
-                    <li class="feauter-item">
+                    <li class="feature-item">
                         <div class="feature-wrapper-svg">
                             <svg width="64" height="64">
                                 <use href="./images/icons.svg#icon-antenna"></use>
@@ -71,7 +76,7 @@
                             perfect and creative solution.
                         </p>
                     </li>
-                    <li class="feauter-item">
+                    <li class="feature-item">
                         <div class="feature-wrapper-svg">
                             <svg width="64" height="64">
                                 <use href="./images/icons.svg#icon-clock"></use>
@@ -82,7 +87,7 @@
                             within the shortest possible
                             time.</p>
                     </li>
-                    <li class="feauter-item">
+                    <li class="feature-item">
                         <div class="feature-wrapper-svg">
                             <svg width="64" height="64">
                                 <use href="./images/icons.svg#icon-diagram"></use>
@@ -95,7 +100,7 @@
                             risk.
                         </p>
                     </li>
-                    <li class="feauter-item">
+                    <li class="feature-item">
                         <div class="feature-wrapper-svg">
                             <svg width="64" height="64">
                                 <use href="./images/icons.svg#icon-astronaut"></use>
@@ -111,12 +116,13 @@
 
         <!-- #3 Team section -->
 
-        <section class="hidden-visible team section">
-            <div class="container">
+        <section class=" team section">
+            <div class="container team-wrapper">
                 <h2 class="team-title">Our Team</h2>
                 <ul class="team-list">
                     <li class="team-list-item">
-                        <img class="team-img" src="./images/Mark_Guerrero.jpg" alt="Mark" width="264">
+                        <img class="team-img" srcset="./images/Mark_Guerrero.jpg 1x, ./images/Mark_Guerrero@2x.jpg 2x"
+                            src="./images/Mark_Guerrero.jpg" alt="Mark" width="264">
                         <div class="name-wrap">
                             <h3 class="team-list-title">Mark Guerrero</h3>
                             <p class="team-list-description">Product Designer</p>
@@ -154,7 +160,8 @@
                         </div>
                     </li>
                     <li class="team-list-item">
-                        <img class="team-img" src="./images/Tom_Ford.jpg" alt="Tom" width="264">
+                        <img class="team-img" srcset="./images/Tom_Ford.jpg 1x, /images/Tom_Ford@x2.jpg 2x"
+                            src="./images/Tom_Ford.jpg" alt="Tom" width="264">
                         <div class="name-wrap">
                             <h3 class="team-list-title">Tom Ford</h3>
                             <p class="team-list-description">Frontend Developer</p>
@@ -192,7 +199,8 @@
                         </div>
                     </li>
                     <li class="team-list-item">
-                        <img class="team-img" src="./images/Camila_Garcia.jpg" alt="Camila" width="264">
+                        <img class="team-img" srcset="./images/Camila_Garcia.jpg 1x, ./images/Camila_Garcia@2x.jpg 2x"
+                            src="./images/Camila_Garcia.jpg" alt="Camila" width="264">
                         <div class="name-wrap">
                             <h3 class="team-list-title">Camila Garcia</h3>
                             <p class="team-list-description">Marketing</p>
@@ -230,7 +238,8 @@
                         </div>
                     </li>
                     <li class="team-list-item">
-                        <img class="team-img" src="./images/Daniel_Wilson.jpg" alt="Daniel" width="264">
+                        <img class="team-img" srcset="./images/Daniel_Wilson.jpg 1x, ./images/Daniel_Wilson@2x.jpg 2x"
+                            src="./images/Daniel_Wilson.jpg" alt="Daniel" width="264">
                         <div class="name-wrap">
                             <h3 class="team-list-title">Daniel Wilson</h3>
                             <p class="team-list-description">UI Designer</p>
@@ -273,13 +282,27 @@
 
         <!-- #4 Portfolio section -->
 
-        <section class="hidden-visible portfolio section">
+        <section class=" portfolio section">
             <div class="container">
                 <h2 class="main-portfolio-title">Our Portfolio</h2>
                 <ul class="portfolio-list">
                     <li class="portfolio-item">
                         <div class="portfolio-wrapper-overlay">
-                            <img class="portfolio-img" src="./images/Banking.jpg" alt="Banking" width="360">
+
+                            <picture>
+                                <source media="(min-width: 1156px)"
+                                    srcset="./images/portfolio/imgBanking-desc1158@1x.jpg 1x, ./images/portfolio/imgBanking-desc1158@2x.jpg 2x">
+
+                                <source media="(min-width: 768px)"
+                                    srcset="./images/portfolio/imgBanking-tebl768@1x.jpg 1x, ./images/portfolio/imgBanking-tebl768@2x.jpg 2x">
+
+                                <source media="(min-width: 320px)"
+                                    srcset="./images/portfolio/imgBanking-mob320@1x.jpg 1x, ./images/portfolio/imgBanking-mob320@2x.jpg 2x">
+                                <img src="./images/portfolio/imgBanking-mob320@1x.jpg" alt="Banking" class="">
+                            </picture>
+
+                            <!-- <img class="portfolio-img" src="./images/Banking.jpg" alt="Banking" width="360"> -->
+
                             <p class="overlay-text">14 Stylish and User-Friendly App Design Concepts · Task Manager
                                 App
                                 · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
@@ -291,7 +314,19 @@
                     </li>
                     <li class="portfolio-item">
                         <div class="portfolio-wrapper-overlay">
-                            <img class="portfolio-img" src="./images/Cashless.jpg" alt="Cashless" width="360">
+
+                            <picture>
+                                <source media="(min-width: 1156px)"
+                                    srcset="./images/portfolio/imgCashless-desc1158@1x.jpg 1x, ./images/portfolio/imgCashless-desc1158@2x.jpg 2x">
+
+                                <source media="(min-width: 768px)"
+                                    srcset="./images/portfolio/imgCashless-tabl768@1x.jpg 1x, ./images/portfolio/imgCashless-tabl768@2x.jpg 2x">
+
+                                <source media="(min-width: 320px)"
+                                    srcset="./images/portfolio/imgCashless-mob320@1x.jpg 1x, ./images/portfolio/imgCashless-mob320@1x.jpg 2x">
+                                <img src="./images/portfolio/imgCashless-mob320@1x.jpg" alt="Cashless" class="">
+                            </picture>
+                            <!-- <img class="portfolio-img" src="./images/Cashless.jpg" alt="Cashless" width="360"> -->
 
                             <p class="overlay-text">14 Stylish and User-Friendly App Design Concepts · Task
                                 Manager
@@ -306,7 +341,20 @@
                     </li>
                     <li class="portfolio-item">
                         <div class="portfolio-wrapper-overlay">
-                            <img class="portfolio-img" src="./images/Meditation.jpg" alt="Meditation" width="360">
+
+                            <picture>
+                                <source media="(min-width: 1156px)"
+                                    srcset="./images/portfolio/imgMeditation-desc1158@1x.jpg 1x, ./images/portfolio/imgMeditation-desc1158@2x.jpg 2x">
+
+                                <source media="(min-width: 768px)"
+                                    srcset="./images/portfolio/imgMeditation-tabl768@1x.jpg 1x, ./images/portfolio/imgMeditation-tabl768@2x.jpg 2x">
+
+                                <source media="(min-width: 320px)"
+                                    srcset="./images/portfolio/imgMeditation-mob320@1x.jpg 1x, ./images/portfolio/imgMeditation-mob320@2x.jpg 2x">
+                                <img src="./images/portfolio/imgMeditation-mob320@1x.jpg" alt="Meditation" class="">
+                            </picture>
+
+                            <!-- <img class="portfolio-img" src="./images/Meditation.jpg" alt="Meditation" width="360"> -->
 
                             <p class="overlay-text">14 Stylish and User-Friendly App Design Concepts · Task
                                 Manager
@@ -321,7 +369,21 @@
                     </li>
                     <li class="portfolio-item">
                         <div class="portfolio-wrapper-overlay">
-                            <img class="portfolio-img" src="./images/Taxi.jpg" alt="Taxi" width="360">
+
+                            <picture>
+                                <source media="(min-width: 1156px)"
+                                    srcset="./images/portfolio/imgTaxi-desc1158@1x.jpg 1x, ./images/portfolio/imgTaxi-desc1158@2x.jpg 2x">
+
+                                <source media="(min-width: 768px)"
+                                    srcset="./images/portfolio/imgTaxi-tabl768@1x.jpg 1x, ./images/portfolio/imgTaxi-tabl768@2x.jpg 2x">
+
+                                <source media="(min-width: 320px)"
+                                    srcset="./images/portfolio/imgTaxi-mob320@1x.jpg 1x, ./images/portfolio/imgTaxi-mob320@2x.jpg 2x">
+                                <img src="./images/portfolio/imgTaxi-mob320@1x.jpg" alt="Taxi" class="">
+                            </picture>
+
+                            <!-- <img class="portfolio-img" src="./images/Taxi.jpg" alt="Taxi" width="360"> -->
+
                             <p class="overlay-text">14 Stylish and User-Friendly App Design Concepts · Task
                                 Manager
                                 App
@@ -334,7 +396,21 @@
                     </li>
                     <li class="portfolio-item">
                         <div class="portfolio-wrapper-overlay">
-                            <img class="portfolio-img" src="./images/Screen.jpg" alt="Screen" width="360">
+
+                            <picture>
+                                <source media="(min-width: 1156px)"
+                                    srcset="./images/portfolio/imgScreen-desc1158@1x.jpg 1x, ./images/portfolio/imgScreen-desc1158@2x.jpg 2x">
+
+                                <source media="(min-width: 768px)"
+                                    srcset="./images/portfolio/imgScreen-tabl768@1x.jpg 1x, ./images/portfolio/imgScreen-tabl768@2x.jpg 2x">
+
+                                <source media="(min-width: 320px)"
+                                    srcset="./images/portfolio/imgScreen-mob320@1x.jpg 1x, ./images/portfolio/imgScreen-mob320@2x.jpg 2x">
+                                <img src="./images/portfolio/imgScreen-mob320@1x.jpg" alt="Screen" class="">
+                            </picture>
+
+                            <!-- <img class="portfolio-img" src="./images/Screen.jpg" alt="Screen" width="360"> -->
+
                             <p class="overlay-text">14 Stylish and User-Friendly App Design Concepts · Task
                                 Manager
                                 App
@@ -347,7 +423,21 @@
                     </li>
                     <li class="portfolio-item">
                         <div class="portfolio-wrapper-overlay">
-                            <img class="portfolio-img" src="./images/Online.jpg" alt="Online" width="360">
+
+                            <picture>
+                                <source media="(min-width: 1156px)"
+                                    srcset="./images/portfolio/imgOnline-desc1158@1x.jpg 1x, ./images/portfolio/imgOnline-desc1158@2x.jpg 2x">
+
+                                <source media="(min-width: 768px)"
+                                    srcset="./images/portfolio/imgOnline-tabl768@1x.jpg 1x, ./images/portfolio/imgOnline-tabl768@2x.jpg 2x">
+
+                                <source media="(min-width: 320px)"
+                                    srcset="./images/portfolio/imgOnline-mob320@1x.jpg 1x, ./images/portfolio/imgOnline-mob320@2x.jpg 2x">
+                                <img src="./images/portfolio/imgOnline-mob320@1x.jpg" alt="Online" class="">
+                            </picture>
+
+                            <!-- <img class="portfolio-img" src="./images/Online.jpg" alt="Online" width="360"> -->
+
                             <p class="overlay-text">14 Stylish and User-Friendly App Design Concepts · Task
                                 Manager
                                 App
@@ -363,7 +453,7 @@
         </section>
     </main>
     <!-- Footer section -->
-    <footer class="hidden-visible footer">
+    <footer class="footer">
         <div class="container footer-wrapper">
             <div class="footer-left">
                 <a class="footer-logo-left" href="./index.html">
@@ -426,9 +516,9 @@
     </footer>
     <!-- Backdrop section -->
 
-    <!-- <div class="backdrop is-open">  -->
+    <!-- <for seen add class to backdrop - is-open">  -->
 
-    <div class="hidden-visible backdrop">
+    <div class=" backdrop">
         <div class="modal">
             <button type="button" class="close-modal-btn">
                 <svg class="svg-button-close" width="8" height="8">
@@ -488,6 +578,66 @@
             </form>
         </div>
     </div>
+    <!-- Modal menu -->
+    <!-- for open add clas - modal-menu-is-open -->
+    <div class="modal-menu ">
+        <div class="menu-wrapper">
+            <button type="button" class="menu-burger-button">
+                <svg class="menu-svg" width="8" height="8">
+                    <use href="./images/icons.svg#icon-menu-btn-cross"></use>
+                </svg>
+            </button>
+
+            <ul class="menu-list">
+                <li class="menu-item"><a class="menu-link menu-link-ch" href="./index.html">Studio</a></li>
+                <li class="menu-item"><a class="menu-link" href="">Portfolio</a></li>
+                <li class="menu-item"><a class="menu-link" href="">Contacts</a></li>
+            </ul>
+            <address class="menu-email-tel">
+                <ul class="menu-address-list">
+                    <li>
+                        <a class="menu-address-link menu-address-link-light" href="tel:+110001111111">+11 (000)
+                            111-11-11</a>
+                    </li>
+                    <li>
+                        <a class="menu-address-link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                    </li>
+                </ul>
+            </address>
+            <ul class="menu-social-list">
+                <li class="team-social-item">
+                    <a class="footer-social-link" href="https://www.instagram.com/">
+                        <svg class="team-social-svg" width="24" height="24">
+                            <use href="./images/icons.svg#icon-instagram">
+                            </use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="team-social-item">
+                    <a class="footer-social-link" href="https://twitter.com/">
+                        <svg class="team-social-svg" width="24" height="24">
+                            <use href="./images/icons.svg#icon-twitter"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="team-social-item">
+                    <a class="footer-social-link" href="https://www.facebook.com/">
+                        <svg class="team-social-svg" width="24" height="24">
+                            <use href="./images/icons.svg#icon-facebook"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="team-social-item">
+                    <a class="footer-social-link" href="https://www.linkedin.com/feed/">
+                        <svg class="team-social-svg" width="24" height="24">
+                            <use href="./images/icons.svg#icon-linkedin"></use>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
 </body>
 
 </html>
